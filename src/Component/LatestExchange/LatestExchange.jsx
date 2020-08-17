@@ -20,8 +20,8 @@ const LatestExchange = ({ reserveList }) => {
           </thead>
           <tbody>
           {
-          [1,2,3,4,5,6,7,8,9,10].map(reserveItem => 
-                  <tr>
+          [1,2,3,4,5,6,7,8,9,10].map((reserveItem,index) => 
+                  <tr key={index}>
                     <td><img src="https://i.imgur.com/QSPfdPw.png" alt=""/></td>
                     <td><img src="https://i.imgur.com/mzFd499.png" alt=""/></td>
                     <td>50 USD</td>

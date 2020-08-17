@@ -18,7 +18,6 @@ const ExchangeSelector = ({reserveList}) => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => console.log(data);
   useEffect(()=>{
-    console.log(sendItem,receiveItem);
   },[sendItem,receiveItem])
   return (
     <div className="exchange-block py-4 shadow">
@@ -32,7 +31,7 @@ const ExchangeSelector = ({reserveList}) => {
                     reserveList &&
                     reserveList.map(reserveItem=>
                       reserveItem.reserve>0 &&
-                        <option className="text-capitalize" value={reserveItem.id}>{reserveItem.name} - {reserveItem.currency}</option>
+                        <option key={reserveItem.id} className="text-capitalize" value={reserveItem.id}>{reserveItem.name} - {reserveItem.currency}</option>
                     )
                   }
                 </select>
@@ -49,7 +48,7 @@ const ExchangeSelector = ({reserveList}) => {
                     reserveList &&
                     reserveList.map(reserveItem=>
                       reserveItem.reserve>0 &&
-                        <option className="text-capitalize" value={reserveItem.id}>{reserveItem.name} - {reserveItem.currency}</option>
+                        <option key={reserveItem.id} className="text-capitalize" value={reserveItem.id}>{reserveItem.name} - {reserveItem.currency}</option>
                     )
                   }
                 </select>
