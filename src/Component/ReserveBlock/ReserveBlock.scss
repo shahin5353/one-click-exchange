@@ -1,0 +1,11 @@
+.reserve-block{
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(238, 237, 237), rgb(195, 192, 188));
+    border: 1px solid rgb(236, 149, 9);
+    border-radius: 0.5rem;
+    .reserve-header{
+        background: linear-gradient(to bottom, rgb(250, 84, 7), rgb(195, 192, 188));
+        text-align: center;
+        font-weight: bolder;
+    }
+}

@@ -1,0 +1,20 @@
+.main-nav-active{
+    border-bottom: 2px solid rgb(250, 84, 7);
+    color: rgb(250, 84, 7)!important;
+}
+nav{
+    background-image: url(../../assets/navbar-background.jpg);
+    font-size: 1.1rem;
+    .navbar-brand{
+        font-size: 2rem;
+    }
+    ul{
+        a:hover{
+            border-bottom: 2px solid rgb(23, 27, 231);
+            color: rgb(23, 27, 231)!important;
+        }
+    }
+}
+.exchange-time{
+    background: linear-gradient(to bottom, rgb(250, 84, 7), rgb(243, 142, 9));
+}
